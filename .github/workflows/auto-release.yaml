@@ -6,6 +6,7 @@ on:
 
 permissions:
   contents: write
+  id-token: write
 
 jobs:
   release:
@@ -127,3 +128,6 @@ jobs:
             pip install "https://github.com/${{ github.repository }}/releases/download/${{ steps.version.outputs.tag }}/${{ steps.artifacts.outputs.wheel_name }}"
           files: |
             dist/*
+
+        env:
+          GITHUB_TOKEN: ${{ github.token }}
