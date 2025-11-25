@@ -3,9 +3,9 @@ requires = ["setuptools>=64", "wheel"]
 build-backend = "setuptools.build_meta"
 
 [project]
-name = "pkg-pipeline-filters"
+name = "pkg-filters"
 version = "0.14.0"
-description = "Pipeline filters for multiple Python frameworks"
+description = "Filters for multiple Python frameworks"
 readme = "README.md"
 requires-python = ">=3.10"
 license = { text = "MIT" }
@@ -22,7 +22,7 @@ dependencies = [
 #[project.optional-dependencies]
 
 [project.urls]
-Homepage = "https://github.com/itqadem-apps/pkg_pipeline_filters"
+Homepage = "https://github.com/itqadem-apps/pkg_filters"
 
 [tool.setuptools.packages.find]
 where = ["src"]
