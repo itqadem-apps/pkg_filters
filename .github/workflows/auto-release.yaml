@@ -1,9 +1,8 @@
-
 name: Auto Release (minor)
 
 on:
   push:
-    branches: [ main ]
+    branches: [main]
 
 permissions:
   contents: write
@@ -23,7 +22,7 @@ jobs:
       - name: Set up Python
         uses: actions/setup-python@v5
         with:
-          python-version: '3.11'
+          python-version: "3.11"
 
       - name: Compute next minor version
         id: version
@@ -120,7 +119,7 @@ jobs:
             Auto release for pkg_filters.
 
             Install directly from the tag:
-            
+
             pip install "git+https://github.com/${{ github.repository }}.git@${{ steps.version.outputs.tag }}"
 
             Or install the wheel directly from the release (public repo):
@@ -128,3 +127,6 @@ jobs:
             pip install "https://github.com/${{ github.repository }}/releases/download/${{ steps.version.outputs.tag }}/${{ steps.artifacts.outputs.wheel_name }}"
           files: |
             dist/*
+
+        env:
+          GITHUB_TOKEN: ${{ github.token }}
