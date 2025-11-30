@@ -22,6 +22,7 @@ __all__ = (
     "SortInput",
     # Sort input mapper
     'sort_input_to_spec',
+    'dataclass_sort_input_to_spec',
 
     # Projection
     "Path",
@@ -52,6 +53,7 @@ from .sort_input import (
     SortFieldInput,
     SortInput,
     sort_input_to_spec,
+    dataclass_sort_input_to_spec,
 )
 
 from .projection import (

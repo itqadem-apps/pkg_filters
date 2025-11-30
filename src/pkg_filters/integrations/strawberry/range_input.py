@@ -130,7 +130,7 @@ class IntRangeFilterInput:
     lte: Optional[int] = None
 
     def to_vo(self) -> RangeFilterVO[int]:
-        return DateTimeRangeFilterVO(
+        return RangeFilterVO(
             eq=self.eq,
             gt=self.gt,
             gte=self.gte,
