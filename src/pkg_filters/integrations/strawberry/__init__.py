@@ -20,6 +20,7 @@ __all__ = (
     "SortDirection",
     "SortFieldInput",
     "SortInput",
+    "SORT_FIELD_METADATA_KEY",
     # Sort input mapper
     'sort_input_to_spec',
     'dataclass_sort_input_to_spec',
@@ -52,6 +53,7 @@ from .sort_input import (
     SortDirection,
     SortFieldInput,
     SortInput,
+    SORT_FIELD_METADATA_KEY,
     sort_input_to_spec,
     dataclass_sort_input_to_spec,
 )
