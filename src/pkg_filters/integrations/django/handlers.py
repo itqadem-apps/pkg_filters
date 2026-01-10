@@ -1,6 +1,6 @@
 from __future__ import annotations
 
-from dataclasses import dataclass
+from dataclasses import dataclass, fields as dc_fields
 from typing import Any, Callable, Mapping, Sequence, TypeVar
 
 from django.db.models import F, Q as DjangoQ, QuerySet
